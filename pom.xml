@@ -99,7 +99,7 @@
                         <configuration>
                             <tasks>
                                 <exec
-                                 executable="appcfg.sh"
+                                 executable="${app.cfg.exec}"
                                  failonerror="true">
                                  <arg line="update ${project.build.directory}/${assemble}-site-war"/>
                                </exec>
@@ -113,4 +113,30 @@
             </plugin>
         </plugins>
     </build>
+
+    <profiles>
+        <profile>
+            <id>window.profile</id>
+            <activation>
+                <os>
+                    <family>windows</family>
+                </os>
+            </activation>
+            <properties>
+                <app.cfg.exec>appcfg.cmd</app.cfg.exec>
+            </properties>
+        </profile>
+        <profile>
+            <id>unix.profile</id>
+            <activation>
+                <activeByDefault/>
+                <os>
+                    <family>unix</family>
+                </os>
+            </activation>
+            <properties>
+                <app.cfg.exec>appcfg.sh</app.cfg.exec>
+            </properties>
+        </profile>
+    </profiles>
 </project>
