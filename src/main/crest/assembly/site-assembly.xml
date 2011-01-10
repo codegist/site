@@ -33,6 +33,9 @@
             <directory>../crest/core/target/site</directory>
             <outputDirectory>/</outputDirectory>
             <includes/>
+            <excludes>
+               <exclude>res/**</exclude>
+            </excludes>
         </fileSet>
         <fileSet>
             <directory>../crest/sample/target/site</directory>
