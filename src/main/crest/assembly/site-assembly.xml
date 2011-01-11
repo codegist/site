@@ -29,14 +29,42 @@
     <includeBaseDirectory>false</includeBaseDirectory>
 
     <fileSets>
+
+        <!--Commons-->
+        <fileSet>
+            <directory>../crest/target/site</directory>
+            <outputDirectory>/</outputDirectory>
+            <includes>
+                <include>sitemap.xml</include>
+            </includes>
+        </fileSet>
+        <fileSet>
+            <directory>../crest/target/site/css</directory>
+            <outputDirectory>/css</outputDirectory>
+            <includes/>
+        </fileSet>
+        <fileSet>
+            <directory>../crest/target/site/images</directory>
+            <outputDirectory>/images</outputDirectory>
+            <includes/>
+        </fileSet>
+        <fileSet>
+            <directory>../crest/target/site/css</directory>
+            <outputDirectory>/sample/css</outputDirectory>
+            <includes/>
+        </fileSet>
+
+
+        <!--TODO: Core and Sample can't override css/images etc, because of assembly detecting file already exists-->
+
+        <!--Core-->
         <fileSet>
             <directory>../crest/core/target/site</directory>
             <outputDirectory>/</outputDirectory>
             <includes/>
-            <excludes>
-               <exclude>res/**</exclude>
-            </excludes>
         </fileSet>
+
+        <!--Sample-->
         <fileSet>
             <directory>../crest/sample/target/site</directory>
             <outputDirectory>/sample</outputDirectory>
