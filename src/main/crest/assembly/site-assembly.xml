@@ -53,6 +53,11 @@
             <outputDirectory>/sample/css</outputDirectory>
             <includes/>
         </fileSet>
+        <fileSet>
+            <directory>../crest/target/site/images</directory>
+            <outputDirectory>/sample/images</outputDirectory>
+            <includes/>
+        </fileSet>
 
 
         <!--TODO: Core and Sample can't override css/images etc, because of assembly detecting file already exists-->
