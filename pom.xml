@@ -43,7 +43,7 @@
     </scm>
 
     <issueManagement>
-        <system>Github Issue Tracker</system>
+        <system>GITHUB</system>
         <url>https://github.com/codegist/site/issues</url>
     </issueManagement>
 
