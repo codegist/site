@@ -1,0 +1,34 @@
+<redirects>
+    <redirect>
+        <from>/oauth.html</from>
+        <to status="301">/authentication/oauth.html</to>
+    </redirect>
+    <redirect>
+        <from>/jackson.html</from>
+        <to status="301">/serialization/jackson.html</to>
+    </redirect>
+    <redirect>
+        <from>/httpclient.html</from>
+        <to status="301">/serialization/httpclient.html</to>
+    </redirect>
+    <redirect>
+        <from>/deeper.html</from>
+        <to status="301">/deeper/configuration.html</to>
+    </redirect>
+    <redirect>
+        <from>/contact.html</from>
+        <to status="301">/support.html</to>
+    </redirect>
+    <redirect>
+        <from>/cglib.html</from>
+        <to status="301">/deeper/cglib.html</to>
+    </redirect>
+    <redirect>
+        <from>/android.html</from>
+        <to status="301">/deeper/android.html</to>
+    </redirect>
+    <redirect>
+        <from>/sample-delicious.html</from>
+        <to status="301">/index.html</to>
+    </redirect>
+</redirects>

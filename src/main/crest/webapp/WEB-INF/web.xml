@@ -19,6 +19,21 @@
   -->
 
 <web-app xmlns="http://java.sun.com/xml/ns/javaee" version="2.5">
+
+    <servlet>
+        <servlet-name>redirector</servlet-name>
+        <servlet-class>org.codegist.web.servlet.CRestRedirectorServlet</servlet-class>
+        <init-param>
+            <param-name>redirects.config</param-name>
+            <param-value>WEB-INF/redirects.xml</param-value>
+        </init-param>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>redirector</servlet-name>
+        <url-pattern>/*</url-pattern>
+    </servlet-mapping>
+
     <welcome-file-list>
 		<welcome-file>index.html</welcome-file>
 	</welcome-file-list>
