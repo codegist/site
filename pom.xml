@@ -111,8 +111,10 @@
                             <tasks>
                                 <exec
                                  executable="${app.cfg.exec}"
-                                 failonerror="true">
-                                 <arg line="update ${project.build.directory}/${assemble}-site-war"/>
+                                 failonerror="true"
+                                 inputstring="${account.google-appengine.pwd}"
+                                 >
+                                 <arg line="--email=${account.google-appengine.email} --passin update ${project.build.directory}/${assemble}-site-war"/>
                                </exec>
                             </tasks>
                         </configuration>
